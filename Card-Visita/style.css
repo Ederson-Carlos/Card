@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #c0bfc5;
+}
+.card {
+    background-color: #d1bebec7;
+    background: url('cidade.png') no-repeat center center;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.profile-image{
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    list-style: none;
+}
+.links a {
+    display: block;
+    text-decoration: none;
+    background-color: hsla(211, 28%, 36%, 0.753);
+    color: #fff;
+    padding: 9px 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.links a:hover {
+    background: #4b75a1;
+    transform: translateY(-2px);
+}
+@media (max-width: 400px) {
+    .card {
+        width: 90%;
+        padding: 24px 16px;
+    }
+}
+.cab {
+    color: rgb(228, 226, 218);
+    font-weight: 500;
+    margin-bottom: 15px;
+    border-radius: 10%;
+    background-color: #59759288;
+}
+.cabb {
+    color: rgb(228, 226, 218);
+    font-weight: 500;
+    margin-bottom: 15px;
+    border-radius: 10%;
+    background-color: #59759288;
+}
+.imagem-fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.name {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.aparecer {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+.name {animation-delay: 0.3s;}
+.cab {animation-delay: 0.6s;}
+.cabb {animation-delay: 0.9s;}
